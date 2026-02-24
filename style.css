@@ -46,5 +46,8 @@ header{
 }
 
 .logo-text{
-    
+    background: linear-gradient(90deg, #e6e9f0 0%, #2afc85 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
