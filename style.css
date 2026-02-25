@@ -7,8 +7,7 @@
 }
 
 body{
-    /* background: linear-gradient(135deg, #0c0f17 0%, #151925 100%); */
-    background-color: lightblue;
+    background: linear-gradient(135deg, #0c0f17 0%, #151925 100%);
     color: #e6e9f0;
     min-height: 100vh;
     overflow: hidden;
@@ -104,7 +103,7 @@ nav a:hover::after{
 
 .content{
     max-width: 600px;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards 0.5s;
 }
@@ -112,4 +111,39 @@ nav a:hover::after{
 h1{
     font-size: 3.5rem;
     margin-bottom: 15px;
+    background: linear-gradient(90deg, #e6e9f0 0%, #2afc85 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: 0 5px 15px rgba(46, 252, 139, 0.3);
 }
+
+h2{
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #c2c6d3;
+    font-weight: 500;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #c2c6d3;
+}
+
+.typing-text{
+    position: relative;
+    display: inline-block;
+    color: #2afc85;
+}
+
+.typing-text::after{
+    content: "";
+    position: absolute;
+    right: -8px;
+    animation: blink 0.7s infinite;
+    color: #2afc85;
+}
+
+.
