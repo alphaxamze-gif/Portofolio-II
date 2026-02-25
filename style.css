@@ -87,3 +87,17 @@ nav a:hover::after{
     color: #e6e9f0;
     cursor: pointer;
 }
+
+/* HERO SECTION */
+.hero{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 120px 40px 60px;
+    min-height: 100vh;
+}
