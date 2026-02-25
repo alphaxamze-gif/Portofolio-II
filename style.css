@@ -101,3 +101,15 @@ nav a:hover::after{
     padding: 120px 40px 60px;
     min-height: 100vh;
 }
+
+.content{
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+h1{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
