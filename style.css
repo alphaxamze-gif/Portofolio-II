@@ -51,3 +51,39 @@ header{
     -webkit-text-fill-color: transparent;
 }
 
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a{
+    color: #c2c6d3;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+nav a:hover{
+    color: #2afc85;
+}
+
+nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2afc85;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after{
+    display: none;
+    font-size: 1.5rem;
+    color: #e6e9f0;
+    cursor: pointer;
+}
