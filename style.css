@@ -81,6 +81,10 @@ nav a::after{
 }
 
 nav a:hover::after{
+    width: 100%;
+}
+
+.menu-toggle{
     display: none;
     font-size: 1.5rem;
     color: #e6e9f0;
@@ -151,7 +155,7 @@ p{
     gap: 20px;
     margin-top: 40px;
     flex-wrap: wrap;
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     animation: fadeInUp 1s ease forwards 0.8s;
 }
@@ -168,4 +172,28 @@ p{
     gap: 10px;
     position: relative;
     overflow: hidden;
+}
+
+.btn-primary{
+    background: linear-gradient(90deg, #1ed761 0%, #15c46a 100%);
+    color: #0c0f17;
+    box-shadow: 0 5px 15px;
+}
+
+.btn-primary:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgb(30, 215, 97, 0.6);
+}
+
+.btn-primary::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, 
+    rgba(255, 255, 255, 0.4),
+    );
+    transition: 0.5s;
 }
